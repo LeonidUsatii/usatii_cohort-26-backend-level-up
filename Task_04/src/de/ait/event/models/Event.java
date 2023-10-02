@@ -14,4 +14,14 @@ public class Event {
     private String title;
     private String startDate;
     private String expirationDate;
+
+    @Override
+    public String toString() {
+        return "Event{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", startDate='" + startDate + '\'' +
+                ", expirationDate='" + expirationDate + '\'' +
+                '}';
+    }
 }

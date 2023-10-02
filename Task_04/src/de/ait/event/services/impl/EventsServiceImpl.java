@@ -38,7 +38,7 @@ public class EventsServiceImpl implements EventsService {
         Event eventForUpdate = null;
         for (Event event : events) {
             if (event.getId().equals(id)) {
-                eventForUpdate = event;
+                eventForUpdate = new Event(id, event.getTitle(), startDate, expirationDate);
                 break;
             }
         }

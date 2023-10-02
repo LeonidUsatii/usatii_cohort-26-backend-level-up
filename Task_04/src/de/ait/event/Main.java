@@ -36,13 +36,13 @@ public class Main {
                     String startDate = scanner.nextLine();
                     System.out.println("Введите дату окончания события");
                     String expirationDate = scanner.nextLine();
-                    eventsService.addEvent(title, startDate, expirationDate);
+                    System.out.println( eventsService.addEvent(title, startDate, expirationDate));
                 }
                 case 2 -> {
                     System.out.println("Получить событие по дате");
                     System.out.println("Введите дату начала события:");
                     String startDate = scanner.nextLine();
-                    eventsService.getEvent(startDate);
+                    System.out.println( eventsService.getEvent(startDate));
                 }
                 case 3 -> {
                     System.out.println("Обновить событие");
@@ -53,7 +53,7 @@ public class Main {
                     String startDate = scanner.nextLine();
                     System.out.println("Введите дату окончания события");
                     String expirationDate = scanner.nextLine();
-                    eventsService.updateEvent(id, startDate, expirationDate);
+                    System.out.println(eventsService.updateEvent(id, startDate, expirationDate));
 
                 }
                 case 4 -> {
